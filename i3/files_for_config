@@ -1,0 +1,17 @@
+brightnessctl
+xclip
+scrot
+rofi
+mate-search-tool // if needed
+brave-bin // from aur
+guake
+telegram-desktop
+picom   // as compositor
+xinput // for natural scrolling and also needed to be configured
+i3lock-color // from aur
+feh // as background provider
+playerctl // for play-pause functionality of the mdedia files
+pactl // for the control of volume
+polkit // for making i3 pop for root user password for applications
+
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1623215007022020-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>csd-wacom</icon>
+	<name>copy path </name>
+	<unique-id>1623294541125561-1</unique-id>
+	<command>echo -n &quot;%F&quot; | xclip -selection c</command>
+	<description>copy path of directory or file</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>xapp-favorites-app</icon>
+	<name>open a writer file</name>
+	<unique-id>1623299068276775-1</unique-id>
+	<command>lowriter --writer</command>
+	<description>open a blank file in libreoffice writter </description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Search for files</name>
+	<unique-id>1623564371608012-1</unique-id>
+	<command>mate-search-tool --path=%f</command>
+	<description>search files in selected folder</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon></icon>
+	<name>open as root </name>
+	<unique-id>1624779797814913-1</unique-id>
+	<command>pkexec thunar %f</command>
+	<description>open the selected folder as root user</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+</actions>

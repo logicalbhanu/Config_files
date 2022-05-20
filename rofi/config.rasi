@@ -1,0 +1,10 @@
+// this is comment and .rasi files supports c and c++ like comments
+configuration {
+	modi: "run,file-browser-extended,drun,window,keys";
+	show-icons: false;
+//	icon-theme: "papirus";  
+//	theme: "/usr/share/rofi/themes/material.rasi";
+}
+//@import "/usr/share/rofi/themes/material.rasi"
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+//@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
