@@ -64,6 +64,8 @@ exec_always --no-startup-id nm-applet
 #get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
 
+exec --no-startup-id /usr/bin/dunst
+
 #to control the resolution in i3(only in i3 and not in the other applications in it, i am using it after an bug in xorg-server, keeping this line till it get fixed. 
 # which makes status bar and other i3 things very zoomed in
 #exec xrandr --dpi 110
@@ -166,10 +168,10 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 
 ## the icons used below are copied from awesome font cheat sheet and awesome font is installed in system
-set $ws1 "1: "
-set $ws2 "2: "
-set $ws3 "3:"
-set $ws4 "4:VM"
+set $ws1 "1:"
+set $ws2 "2:"
+set $ws3 "3:"
+set $ws4 "4:"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -224,6 +226,8 @@ bindsym $mod+Shift+r restart
 # from here i3-gaps part
 
 #smart_gaps on
+hide_edge_borders smart 
+# this will disable the borders when only one window is there on a workspace.
 gaps inner 5
 gaps outer 1
 
@@ -487,6 +491,9 @@ bindsym $mod+i workspace prev
 
 # key binding for starting brave browser
 bindsym Mod1+c exec brave 
+
+# key binding for starting firefox
+bindsym Mod1+m exec firefox
 
 # key binding for rofi beats radio station 
 bindsym Mod1+b exec /home/bhanu/bin/rofi-beats
