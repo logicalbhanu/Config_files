@@ -145,7 +145,10 @@ cmd copy_file_content ${{
 
 cmd stripspace %stripspace "$f"
 
-cmd open-with %"$@" "$fx"
+#cmd open-with %"$@" "$fx"
+cmd open-with ${{
+  $1 $fx &>/dev/null &
+}}
 
 # Bindings
 # Remove some defaults
